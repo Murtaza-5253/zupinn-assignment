@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", fetchAndPopulate);
 
 async function fetchData(){
     try {
-        const response = await fetch("http://13.201.41.5:8001/supertrend_data",{referrerPolicy: "unsafe_url"});
+        const response = await fetch("http://13.201.41.5:8001/supertrend_data");
         if (!response.ok) {
             throw new Error("Failed to fetch data");
         }
